@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Trading - Fortalis</title>
+</head>
+<body>
+    <header class="topbar">
+    <a href="/html/index.html" class="btn-accueil">Accueil</a>
+    <img src="/img/logo.png" alt="logo" class="logo">
+    <a href="/html/trading.html" class="btn-accueilpage">Accueil Page</a>
+    </header>
+
+    <div style="height:110px"></div>
+
+    <div class="finance-container">
+        <div class="controls">
+        <button id="addRow" class="btn btn-add">➕ Ajouter ligne</button>
+        <button id="saveBtn" class="btn btn-save">💾 Sauvegarder</button>
+        <button id="resetBtn" class="btn btn-reset">♻️ Réinitialiser</button>
+        <span style="color:white;font-size:14px;">Les données sont sauvegardées dans votre navigateur.</span>
+        </div>
+
+        <div class="suivi-mensuel">
+        <table class="table-follow" id="financeTable">
+            <thead>
+            <tr>
+                <th class="finance-title">Mois</th>
+                <th class="finance-title">Revenus CDI</th>
+                <th class="finance-title">Revenus Steering</th>
+                <th class="finance-title">Revenus Autres</th>
+                <th class="finance-title">Dépenses</th>
+                <th class="finance-title">Épargne</th>
+                <th class="finance-title">Capital Fin de Mois</th>
+                <th class="finance-title">🗑️</th>
+            </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+        </div>
+    </div>
+
+    <footer class="footer">© 2025</footer>
+    <script src="/js/finance.js"></script>
+</body>
+</html>
