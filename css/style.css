@@ -217,92 +217,134 @@ footer {
 /*PLANNING.HTML*/
 /*Body*/
 .topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #111;
-    padding: 1rem 2rem;
-    border-bottom: 1px solid #333;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-.topbar a {
-    color: #e5e5e5;
-    text-decoration: none;
-    font-weight: bold;
-}
-.topbar a:hover {
-    color: #f97316;
-}
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-}
-.case_day {
-    background: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 12px;
-    padding: 1rem;
-    width: 320px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-}
-.case_day h3 {
-    color: #f97316;
-    text-align: center;
-    border-bottom: 1px solid #333;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-}
-.task {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.4rem 0;
-    background: #111;
-    padding: 0.4rem 0.8rem;
-    border-radius: 8px;
-}
-.task p {
-    margin: 0;
-}
-.buttons {
-    display: flex;
-    gap: 0.4rem;
-}
-button {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s;
-}
-button.ok { background: #16a34a; }
-button.oknok { background: #facc15; }
-button.nok { background: #dc2626; }
-button:focus { outline: none; }
-button.active {
-    box-shadow: 0 0 10px 2px rgba(249, 115, 22, 0.8);
-}
-.reset-container {
-    text-align: center;
-    margin: 2rem;
-}
-.reset-btn {
-    background: #f97316;
-    color: #fff;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.reset-btn:hover {
-    background: #ffae42;
-}
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #333;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .topbar a {
+      color: #e5e5e5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .topbar a:hover {
+      color: #f97316;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .case_day {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 1rem;
+      width: 320px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .case_day h3 {
+      color: #f97316;
+      text-align: center;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .task {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0.4rem 0;
+      background: #111;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+    }
+
+    .task p {
+      margin: 0;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+    }
+
+    button {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button.ok { background: #16a34a; }
+    button.oknok { background: #facc15; }
+    button.nok { background: #dc2626; }
+    button:focus { outline: none; }
+
+    button.active {
+      box-shadow: 0 0 10px 2px rgba(249, 115, 22, 0.8);
+    }
+
+    .delete-task {
+      background: none;
+      border: none;
+      color: #777;
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+    .delete-task:hover {
+      color: #f97316;
+    }
+
+    .add-task-btn {
+      background: #f97316;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 0.8rem;
+      width: 100%;
+    }
+
+    .add-task-btn:hover {
+      background: #ffae42;
+    }
+
+    .reset-container {
+      text-align: center;
+      margin: 2rem;
+    }
+
+    .reset-btn {
+      background: #f97316;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .reset-btn:hover {
+      background: #ffae42;
+    }
 
 
 /*ISLAM.HTML*/
@@ -387,11 +429,11 @@ button.active {
 
 
 /*Footer*/
-.footer{
-    width: 100%;
-    color: var(--primary-color-basic);
-    background: #000;
+footer {
     text-align: center;
+    padding: 1rem;
+    color: #777;
+    border-top: 1px solid #333;
 }
 
 
