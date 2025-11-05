@@ -216,55 +216,94 @@ footer {
 
 /*PLANNING.HTML*/
 /*Body*/
-
-.container{
-    top: 50px;
-    width: 100%;
-    height: 100%;
-    background-color: #343434;
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.topbar a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-weight: bold;
+}
+.topbar a:hover {
+    color: #f97316;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.case_day {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 320px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.case_day h3 {
+    color: #f97316;
     text-align: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
-.case_day{
-    display: inline-block;
-    width: 500px;
-    height: 500px;
-    padding: 5px;
-    border-radius: 3px solid #000;
-    margin: 20px 50px;
-    background-color: #fff;
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.4rem 0;
+    background: #111;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
 }
-.case_day h3{
-    font-size: 50px;
-    font-weight: bolder;
+.task p {
+    margin: 0;
 }
-.elements{
-    display: inline-block;
+.buttons {
+    display: flex;
+    gap: 0.4rem;
 }
-.elements p{
-    font-size: 20px;
-    margin: 5px 15px 0 0;
-}
-.validation_button{
-    display: inline-block;
-}
-.validation_button p{
-    display: inline-block;
-}
-.validation_button p button{
-    width: 20px;
-    height: 20px;
+button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
     cursor: pointer;
-    display: inline-block;
+    transition: 0.2s;
 }
-.ok{
-    color: green;
+button.ok { background: #16a34a; }
+button.oknok { background: #facc15; }
+button.nok { background: #dc2626; }
+button:focus { outline: none; }
+button.active {
+    box-shadow: 0 0 10px 2px rgba(249, 115, 22, 0.8);
 }
-.ok-nok{
-    color: #ffde59;
+.reset-container {
+    text-align: center;
+    margin: 2rem;
 }
-.nok{
-    color: red;
+.reset-btn {
+    background: #f97316;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
+.reset-btn:hover {
+    background: #ffae42;
+}
+
 
 /*ISLAM.HTML*/
 /*Body*/
