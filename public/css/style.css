@@ -117,12 +117,44 @@ footer {
 /*LANGUES.HTML*/
 /*Body*/
 .body-langues{
-    display: block;
-    width: 95%;
-    height: 100%;
-    background-color: #1a1a1a;
-    margin-left: 2.5%;
+  display: block;
+  width: 95%;
+  height: 100%;
+  background-color: #1a1a1a;
+  margin-left: 2.5%;
 }
+/*phrase traduction*/
+.container_phrase-traduction{
+  display: inline-block;
+  position: inherit;
+  text-align: center;
+  padding: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border: #000 3px solid ;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 90%;
+  margin-left: 5%;
+}
+#container_grayhight{
+  background-color: #777;
+}
+#container_graylight{
+  background-color: #aaa;
+}
+.number_traduction-word{
+  color: #f97316;
+  font-weight: bold;
+  margin: 3px;
+}
+.phrase-traduction{
+  margin: 3px;
+}
+.traduction_word-phrase{
+  margin: 3px;
+}
+/*table of translate words*/
 .table-words{
     display: block;
     font-size: 12px;
@@ -181,6 +213,7 @@ footer {
     margin-left: 2.5%;
     height: 50px;
     border: 3px solid #000;
+    border-radius: 10px;
     background-color: #c5c5c5;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -232,13 +265,12 @@ footer {
   padding: 5px;
   width: 95%;
   height: 100%;
-  margin-left: 2.5%;
 }
 .cadre_planning{
   display: inline-block;
   margin: 5px;
-  width: 450px;
-  height: 155px;
+  width: 330px;
+  height: 178px;
   border: #000 solid 3px;
   text-align: center;
   background-color: #000;
@@ -256,7 +288,7 @@ footer {
 }
 .title-objects_planning{
   display: inline-block;
-  width: 49%;
+  width: 48%;
   padding-top: 2px;
   padding-bottom: 2px;
   border-bottom: #000 solid 3px;
@@ -278,7 +310,7 @@ footer {
 }
 .objects_planning{
   display: inline-block;
-  width: 49%;
+  width: 48%;
   padding-top: 2px;
   padding-bottom: 2px;
   border-bottom: #000 solid 1px;
@@ -512,7 +544,7 @@ footer {
   display: inline-block;
   margin: 25px;
   width: 500px;
-  height: 213px;
+  height: 248px;
   border: #000 solid 3px;
   text-align: center;
   background-color: #000;
@@ -682,7 +714,7 @@ footer {
   display: inline-block;
   margin: 25px;
   width: 500px;
-  height: 213px;
+  height: 248px;
   border: #000 solid 3px;
   text-align: center;
   background-color: #000;
